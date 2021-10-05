@@ -15,6 +15,10 @@ body{
     display: flex;
 }
 
+.right{
+    justify-content: right;
+}
+
 ul{
     list-style: none;
 }
@@ -30,6 +34,19 @@ h4{
     /*Margin*/
 .mrg-lft-15{
     margin-left: 15px;
+}
+
+button{
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    border-width: 1px;
+    color: white;
+    padding: 10px 30px;
+    margin: 20px 5px 20px 5px;
 }
 
 
@@ -56,7 +73,7 @@ h4{
     padding: 20px 0 20px 15px;
 }
 
-   /*Nav Section*/
+        /*Nav Section*/
 #menu nav{
     margin-bottom: 30px;
 }
@@ -66,7 +83,7 @@ h4{
     margin-right: 5px;
 }
 
-    /*Playlist Box*/
+        /*Playlist Box*/
 .play-box i{
     font-size: 40px;
     vertical-align: middle;
@@ -79,7 +96,7 @@ h4{
 
     /*Main Content*/
 #main-content{
-    width: calc(100% - 18vw);
+    width: calc(100% - 20vw);
     margin-left: 20vw;
 }
 
@@ -89,7 +106,7 @@ h4{
 }
 
 header{
-    width: 100%;
+    width: calc(100% - 20vw);
     background-color: rgba(0,0,0,0.4);
     position: fixed;
 }
