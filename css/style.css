@@ -15,6 +15,23 @@ body{
     display: flex;
 }
 
+ul{
+    list-style: none;
+}
+
+li{
+    padding-top: 15px;
+}
+
+h4{
+    color: white;
+}
+
+    /*Margin*/
+.mrg-lft-15{
+    margin-left: 15px;
+}
+
 
 /*DEFAULT*/
 .default{
@@ -28,13 +45,47 @@ body{
     /*Menue*/
 #menu{
     width: 20vw;
+    height: 100vh;
     background-color: black;
+    position: fixed;
+}
+
+.logo-bar{
+    width: 60%;
+    height: auto;
+    padding: 20px 0 20px 15px;
+}
+
+   /*Nav Section*/
+#menu nav{
+    margin-bottom: 30px;
+}
+
+#menu nav li i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+    /*Playlist Box*/
+.play-box i{
+    font-size: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.play-box ul span{
+    font-size: 19px;
 }
 
     /*Main Content*/
 #main-content{
-    width: calc(100% - 200px);
-    overflow-y: scroll
+    width: calc(100% - 18vw);
+    margin-left: 20vw;
+}
+
+.container{
+    width: 100%;
+    overflow-y: scroll;
 }
 
 header{
@@ -42,9 +93,6 @@ header{
     background-color: rgba(0,0,0,0.4);
     position: fixed;
 }
-
-
-
 
 /*FOOTER SECTION*/
 footer{
