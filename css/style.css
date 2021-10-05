@@ -6,4 +6,36 @@
 
 body{
     height: 100vh;
+    background-color: rgba(20, 25, 34, 1);
+    color: rgba(124, 126, 132, 1);
+}
+
+/*UTILITIES*/
+.flex{
+    display: flex;
+}
+
+
+/*DEFAULT*/
+
+
+/*MAIN SECTION*/
+#menu{
+    width: 200px;
+    height: 100vh;
+    background-color: black;
+}
+
+#main-content{
+    width: calc(100% - 200px);
+}
+
+
+/*FOOTER SECTION*/
+footer{
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(40, 40, 40, 1);
 }
