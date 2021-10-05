@@ -20,14 +20,21 @@ body{
 
 
 /*MAIN SECTION*/
+
+    /*Menue*/
 #menu{
-    width: 200px;
+    width: 20vw;
     height: 100vh;
     background-color: black;
 }
-
+    /*Main Content*/
 #main-content{
     width: calc(100% - 200px);
+}
+
+header{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
 }
 
 
