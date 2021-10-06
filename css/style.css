@@ -33,10 +33,15 @@ li{
     padding-top: 15px;
 }
 
+h1,
 h2,
 h3,
 h4{
     color: white;
+}
+
+h1{
+    font-size: 30px;
 }
 
     /*Margin*/
@@ -46,6 +51,18 @@ h4{
 
 .mrg-btt-10{
     margin-bottom: 10px;
+}
+
+.mrg-tp-20{
+    margin-top: 20px;
+}
+
+.mrg-btt-30{
+    margin-bottom: 30px;
+}
+
+.mrg-btt-20{
+    margin-bottom: 20px;
 }
 
 button{
@@ -71,6 +88,7 @@ button{
 }
 
 /*MAIN SECTION*/
+
 
     /*Menue*/
 #menu{
@@ -118,6 +136,7 @@ button{
     width: 100%;
     overflow-y: auto;
     margin-top: 10vh;
+    margin-bottom: 8vh;
 }
 
 header{
@@ -142,7 +161,7 @@ header{
 }
 
 .navigation ul li{
-    margin-left: 10px;
+    margin-left: 20px;
     font-size: 14px;
 }
      /*Card Section*/
@@ -155,14 +174,42 @@ header{
     margin-bottom: 30px;
 }
 
-.img-box{
+.box-card{
     width: 100%;
     margin-bottom: 10px;
+}
+
+.img-box{
+    position: relative;
+    width: 100%;
 }
 
 .img-box img{
     width: 100%;
     height: auto;
+}
+
+.img-box .hover-play{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+
+.img-box:hover  .hover-play{ 
+    display: block;
+}
+
+.hover-play i{
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) ;
 }
 
 .card h3{
