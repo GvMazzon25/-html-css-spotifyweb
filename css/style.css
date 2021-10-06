@@ -9,6 +9,7 @@ body{
     background-color: rgba(20, 25, 34, 1);
     color: rgba(124, 126, 132, 1);
     font-size: 15px;
+    font-family:'Montserrat', sans-serif;
 }
 
 /*UTILITIES*/
@@ -25,12 +26,29 @@ body{
     justify-content: flex-end;
 }
 
+.flex-space{
+    justify-content: space-between;
+}
+
+
+.flex-direction-col{
+    flex-direction: column;
+}
+
+.bottom{
+    justify-content: flex-end;
+}
+
 ul{
     list-style: none;
 }
 
 li{
     padding-top: 15px;
+}
+
+li:hover{
+    color: white;
 }
 
 h1,
@@ -44,9 +62,17 @@ h1{
     font-size: 30px;
 }
 
+hr{
+    border-color: rgba(124, 126, 132, 1);
+}
+
     /*Margin*/
 .mrg-lft-15{
     margin-left: 15px;
+}
+
+.mrg-rgt-35{
+    margin-right: 40px;
 }
 
 .mrg-btt-10{
@@ -57,12 +83,20 @@ h1{
     margin-top: 20px;
 }
 
+.mrg-tp-10{
+    margin-top: 10px;
+}
+
 .mrg-btt-30{
     margin-bottom: 30px;
 }
 
 .mrg-btt-20{
     margin-bottom: 20px;
+}
+
+i{
+    margin-right: 5px;
 }
 
 button{
@@ -97,6 +131,7 @@ button{
     background-color: black;
     position: fixed;
     overflow-y: auto;
+    flex-shrink: 0;
 }
 
 .logo-bar{
@@ -112,7 +147,6 @@ button{
 
 #menu nav li i{
     font-size: 20px;
-    margin-right: 5px;
 }
 
         /*Playlist Box*/
@@ -124,6 +158,30 @@ button{
 
 .play-box ul span{
     font-size: 19px;
+}
+
+#menu .bottom{
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+}
+
+#menu .bottom span{
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#menu .bottom .nickname{
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+}
+
+.bottom .nickname i{
+    font-size: 18px;
 }
 
     /*Main Content*/
@@ -228,7 +286,7 @@ header{
 
 /*FOOTER SECTION*/
 footer{
-    width: 100vw;
+    width: 99vw;
     height: 8vh;
     position: fixed;
     left: 0;
@@ -236,3 +294,69 @@ footer{
     background-color: rgba(40, 40, 40, 1);
     flex-shrink: 0;
 }
+
+footer .flex{
+    align-items: center;
+}
+    /*Right Section*/
+.xs-img-box{
+    width: 50px;
+    height: 50px;
+    vertical-align: center;
+}
+
+.xs-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brano span{
+    display: block;
+    font-size: 12px;
+}
+
+.brano span:first-child{
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+     /*Center Section*/
+.play-section{
+    font-size: 25px;
+    color: white;
+}
+
+.progression-bar{
+    width: 400px;
+    height: 3px;
+    margin: 0 30px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background-color: rgba(124, 126, 132, 1);
+}
+
+.progression{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(202, 204, 211);
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.progress-section span{
+    font-size: 10px;
+} 
+
+.progression::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+     /*Left Section*/
