@@ -144,6 +144,7 @@ header{
     background-color: rgba(0,0,0,0.4);
     position: fixed;
     right: 0;
+    z-index: 1;
 }
 
 /*MAIN NAVIGATION*/
@@ -213,11 +214,16 @@ header{
 }
 
 .card h3{
+    margin-top: 15px;
     margin-bottom: 10px;
 }
 
 .card span{
     font-size: 13px;
+}
+
+.end-card .img-box img,.end{
+    border-radius: 50%;
 }
 
 /*FOOTER SECTION*/
