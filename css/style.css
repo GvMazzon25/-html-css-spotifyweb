@@ -211,6 +211,7 @@ button{
      /*Header Section*/
 button:hover{
     font-size: 16px;
+    width: 252px;
 }
 
 header{
@@ -316,7 +317,7 @@ footer{
 footer .flex{
     align-items: center;
 }
-    /*Right Section*/
+    /*Left Section*/
 .xs-img-box{
     width: 50px;
     height: 50px;
@@ -378,6 +379,10 @@ footer .flex{
     border-radius: 20px;
 }
 
+.progression-bar:hover .progression{
+    background-color: rgba(173, 255, 47, 1);
+}
+
 .progress-section span{
     font-size: 10px;
 } 
@@ -391,4 +396,30 @@ footer .flex{
     overflow: visible;
 }
 
-     /*Left Section*/
+     /*Right Section*/
+     .right-section i{
+         margin-right: 20px;
+     }
+
+     .small-progression-bar{
+        width: 100px;
+        height: 3px;
+        margin: 0 30px 0 0;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        background-color: rgba(124, 126, 132, 1);
+    }
+    
+    .small-progression{
+        width: 20%;
+        height: 100%;
+        background-color: rgb(202, 204, 211);
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+    }
+
+    .small-progression-bar:hover .small-progression{
+        background-color: rgba(173, 255, 47, 1);
+    }
