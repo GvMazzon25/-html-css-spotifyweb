@@ -17,7 +17,7 @@ body{
 }
 
 .right{
-    justify-content: right;
+    justify-content: flex-end;
 }
 
 ul{
@@ -49,6 +49,7 @@ button{
     color: white;
     padding: 10px 30px;
     margin: 20px 5px 20px 5px;
+    width: 250px;
 }
 
 
@@ -63,10 +64,11 @@ button{
 
     /*Menue*/
 #menu{
-    width: 15vw;
-    height: 100vh;
+    width: 190px;
+    height: calc(100% - 8vh);
     background-color: black;
     position: fixed;
+    overflow-y: auto;
 }
 
 .logo-bar{
@@ -98,39 +100,50 @@ button{
 
     /*Main Content*/
 #main-content{
-    width: calc(100% - 15vw);
-    margin-left: 15vw;
+    width: calc(100% - 190px);
+    margin-left: 190px;
 }
 
 .container{
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     margin-top: 10vh;
 }
 
 header{
-    width: calc(100% - 15vw);
+    width: calc(100% - 190px);
     background-color: rgba(0,0,0,0.4);
     position: fixed;
+    right: 0;
 }
 
-/*Main Navigation*/
+/*MAIN NAVIGATION*/
 .navigation{
     width: 51%;
     margin: 0 auto 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.navigation ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .navigation ul li{
-    display: inline-block;
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 14px;
 }
+     /*Card Section*/
 
 /*FOOTER SECTION*/
 footer{
     width: 100vw;
+    height: 8vh;
     position: fixed;
     left: 0;
     bottom: 0;
     background-color: rgba(40, 40, 40, 1);
+    flex-shrink: 0;
 }
