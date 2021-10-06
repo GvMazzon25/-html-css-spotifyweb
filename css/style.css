@@ -95,6 +95,14 @@ hr{
     margin-bottom: 20px;
 }
 
+.pd-tp-10{
+    padding-top: 10px;
+}
+
+.pd-tp-20{
+    padding-top: 20px;
+}
+
 i{
     margin-right: 5px;
 }
@@ -109,10 +117,8 @@ button{
     border-width: 1px;
     color: white;
     padding: 10px 30px;
-    margin: 20px 5px 20px 5px;
     width: 250px;
 }
-
 
 /*DEFAULT*/
 .default{
@@ -149,7 +155,7 @@ button{
     font-size: 20px;
 }
 
-        /*Playlist Box*/
+        /*Playlist Section*/
 .play-box i{
     font-size: 40px;
     vertical-align: middle;
@@ -174,11 +180,16 @@ button{
     margin-top: 10px;
 }
 
+#menu .bottom span:first-child:hover{
+    color: white;
+}
+
 #menu .bottom .nickname{
     font-size: 14px;
     color: white;
     font-weight: 700;
 }
+
 
 .bottom .nickname i{
     font-size: 18px;
@@ -197,12 +208,19 @@ button{
     margin-bottom: 8vh;
 }
 
+     /*Header Section*/
+button:hover{
+    font-size: 16px;
+}
+
 header{
     width: calc(100% - 190px);
     background-color: rgba(0,0,0,0.4);
     position: fixed;
+    padding:20px 5px 20px 5px;
     right: 0;
     z-index: 1;
+    max-height: 77px;
 }
 
 /*MAIN NAVIGATION*/
@@ -322,10 +340,23 @@ footer .flex{
     font-size: 14px;
 }
 
+.growth i:hover {
+    color: white;
+}
+
      /*Center Section*/
 .play-section{
     font-size: 25px;
     color: white;
+}
+
+.play-section{
+    width: 250px;
+    max-height: 24px;
+}
+
+.hover:hover{
+    font-size: 27px;
 }
 
 .progression-bar{
@@ -357,6 +388,7 @@ footer .flex{
     height: 10px;
     background-color: white;
     border-radius: 50%;
+    overflow: visible;
 }
 
      /*Left Section*/
