@@ -150,6 +150,10 @@ button{
     padding: 20px 0 20px 15px;
 }
 
+.logo-bar img:last-child{
+    display: none;
+}
+
         /*Nav Section*/
 #menu nav{
     margin-bottom: 30px;
@@ -363,7 +367,7 @@ footer .flex{
 }
 
 .play-section{
-    width: 250px;
+    width: 40%;
     max-height: 24px;
 }
 
@@ -454,12 +458,51 @@ footer .flex{
     .card{
         width: calc(100% / 2 - 15px);
     }
-   
+   #menue{
+       width: 30px;
+       overflow-x: hidden;
+   }
 }
 
 @media screen and (min-width:400px) and (max-width:599px) {
     .card{
-        width: calc(100% / 1 - 15px);
+        width: calc(100% / 2 - 15px);
     }
 
+    #main-content{
+        width: calc(100% - 50px);
+        margin-left: 50px;
+    }
+
+    header{
+        width: calc(100% - 50px);
+    }
+    
+    #menu{
+        width: 50px;
+        overflow: hidden;
+    }
+
+    .logo-bar img:last-child{
+        display: block;
+        width: 30px;
+        margin-left: -5px;
+    }
+
+    .play-box{
+        display: none;
+    }
+
+    .hide{
+        display: none;
+    }
+
+    .bigger{
+        text-align: center;
+        margin-left: 4px;
+    }
+
+    header{
+        justify-content: center;
+    }
 }
