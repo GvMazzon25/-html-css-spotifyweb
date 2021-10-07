@@ -349,7 +349,7 @@ footer .flex{
     /*Left Section*/
 .xs-img-box{
     width: 50px;
-    height: 50px;
+    height: auto;
     vertical-align: center;
 }
 
@@ -498,6 +498,10 @@ footer .flex{
 @media screen  and (max-width:599px) {
     .card{
         width: calc(100% / 2 - 15px);
+    }
+
+    .navigation{
+        width: 300px;
     }
 
     .navigation ul li{
