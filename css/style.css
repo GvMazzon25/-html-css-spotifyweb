@@ -242,15 +242,18 @@ header{
 
 /*MAIN NAVIGATION*/
 .navigation{
-    width: 75%;
+    width: 700px;
     margin: auto;
 }
 
+.navigation ul{
+    justify-content: center;
+}
 
 .navigation ul li{
-    width: calc(100% / 6 - 20px);
-    margin-left: 20px;
-    font-size: 12px;
+    width: calc(100% / 6 - 15px);
+    margin-left: 15px;
+    font-size: 11px;
 }
 
 /*.navigation{
@@ -463,12 +466,32 @@ footer .flex{
     }
 }
 
+@media screen and (max-width:828px) {
+    .navigation ul li{
+        width: calc(100% / 3 - 20px);
+    }
+}
+
+@media screen and (max-width:749px) {
+    .navigation{
+        width: 500px;
+    }
+
+    .navigation ul li{
+        width: calc(100% / 3 - 20px);
+    }
+}
+
 @media screen and (max-width:699px) {
     .card{
         width: calc(100% / 2 - 15px);
     }
     .navigation ul li{
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 2 - 20px);
+    }
+
+    .navigation{
+        width: 400px;
     }
 }
 
@@ -476,6 +499,11 @@ footer .flex{
     .card{
         width: calc(100% / 2 - 15px);
     }
+
+    .navigation ul li{
+        width: calc(100% / 2 - 20px);
+    }
+
    #menue{
        width: 30px;
        overflow-x: hidden;
