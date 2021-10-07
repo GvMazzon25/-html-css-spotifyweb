@@ -242,10 +242,21 @@ header{
 
 /*MAIN NAVIGATION*/
 .navigation{
+    width: 75%;
+    margin: auto;
+}
+
+
+.navigation ul li{
+    width: calc(100% / 6 - 20px);
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+/*.navigation{
     width: 51%;
     margin: 0 auto 40px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    
 }
 
 .navigation ul{
@@ -257,7 +268,7 @@ header{
 .navigation ul li{
     margin-left: 20px;
     font-size: 14px;
-}
+}*/
      /*Card Section*/
 
 .card{
@@ -442,19 +453,26 @@ footer .flex{
 
 /*RESPONSIVE*/
 
-@media screen and (min-width:699px) and (max-width:1100px){
+@media screen  and (max-width:1100px){
     .card{
         width: calc(100% / 4 - 15px);
     }
-}
 
-@media screen and (min-width:599px) and (max-width:699px) {
-    .card{
-        width: calc(100% / 2 - 15px);
+    .navigation ul li{
+        width: calc(100% / 4 - 20px);
     }
 }
 
-@media screen and (min-width:400px) and (max-width:599px) {
+@media screen and (max-width:699px) {
+    .card{
+        width: calc(100% / 2 - 15px);
+    }
+    .navigation ul li{
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen  and (max-width:599px) {
     .card{
         width: calc(100% / 2 - 15px);
     }
@@ -462,22 +480,16 @@ footer .flex{
        width: 30px;
        overflow-x: hidden;
    }
-}
-
-@media screen and (min-width:400px) and (max-width:599px) {
-    .card{
-        width: calc(100% / 2 - 15px);
-    }
-
-    #main-content{
-        width: calc(100% - 50px);
-        margin-left: 50px;
+   
+   #main-content{
+    width: calc(100% - 50px);
+    margin-left: 50px;
     }
 
     header{
         width: calc(100% - 50px);
     }
-    
+
     #menu{
         width: 50px;
         overflow: hidden;
@@ -500,9 +512,5 @@ footer .flex{
     .bigger{
         text-align: center;
         margin-left: 4px;
-    }
-
-    header{
-        justify-content: center;
     }
 }
