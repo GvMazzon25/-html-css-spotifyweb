@@ -51,6 +51,10 @@ li:hover{
     color: white;
 }
 
+#home:hover{
+    color: white;
+}
+
 h1,
 h2,
 h3,
@@ -153,6 +157,14 @@ button{
 
 #menu nav li i{
     font-size: 20px;
+}
+
+#home{
+    color: rgb(190, 189, 189);
+}
+
+#home::before{
+    content: attr("");
 }
 
         /*Playlist Section*/
@@ -387,12 +399,13 @@ footer .flex{
 } 
 
 .progression::after{
-    content: ("<i class="fa-solid fa-circle-dot"></i>");
+    content:"";
     width: 10px;
     height: 10px;
     background-color: white;
     border-radius: 50%;
     overflow: visible;
+    z-index: 1;
 }
 
      /*Right Section*/
@@ -422,3 +435,31 @@ footer .flex{
     .small-progression-bar:hover .small-progression{
         background-color: rgba(173, 255, 47, 1);
     }
+
+/*RESPONSIVE*/
+
+@media screen and (min-width:699px) and (max-width:1100px){
+    .card{
+        width: calc(100% / 4 - 15px);
+    }
+}
+
+@media screen and (min-width:599px) and (max-width:699px) {
+    .card{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:599px) {
+    .card{
+        width: calc(100% / 2 - 15px);
+    }
+   
+}
+
+@media screen and (min-width:400px) and (max-width:599px) {
+    .card{
+        width: calc(100% / 1 - 15px);
+    }
+
+}
